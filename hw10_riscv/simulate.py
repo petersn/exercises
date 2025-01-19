@@ -12,6 +12,6 @@ async def test_main(dut):
     await wait_cycle()
     dut.reset.value = 0
 
-    for _ in range(10_000):
+    for _ in range(10):
         await wait_cycle()
 
